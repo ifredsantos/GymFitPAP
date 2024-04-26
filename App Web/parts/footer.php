@@ -1,0 +1,1 @@
+<p>&copy; <?php echo date('Y').' '. APP_NAME ?>. Desenvolvido por <a href = "https://fredinson.pt" target = "_blank">Frederico</a></p>

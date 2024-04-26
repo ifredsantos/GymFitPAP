@@ -1,0 +1,21 @@
+{
+  "type": "library",
+  "description": "Examples for PHP wrapper for integration with Easypay Payment System",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Luis Cruz",
+      "homepage": "https://geekalicious.pt/blog/en",
+      "role": "Developer"
+    }
+  ],
+  "version": "1.0.0",
+  "require": {
+    "luismarto/easypay": "1.0.0"
+  },
+  "autoload": {
+    "psr-0": {
+      "EasypayExample\\": "src/"
+    }
+  }
+}

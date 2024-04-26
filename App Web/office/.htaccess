@@ -1,0 +1,37 @@
+#Não mostrar listagens de pastas
+Options -Indexes
+
+RewriteEngine On
+
+#RewriteCond %{HTTPS} off
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteBase /app_web/office/
+
+#RewriteCond %{REMOTE_HOST} !^2\.80\.102\.40$
+#RewriteRule (.*) manutencao.php [L]
+
+ErrorDocument 404 /app_web/office/404.php
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php !-f
+
+RewriteRule ^login$ index.php
+RewriteRule ^logout$ logout.php
+RewriteRule ^dashboard$ dashboard.php
+RewriteRule ^mensalidades$ mensalidades.php
+RewriteRule ^clientes$ clientes.php
+RewriteRule ^produtos$ produtos.php
+RewriteRule ^planos_treino$ planos_treino.php
+RewriteRule ^exercicios$ exercicios.php
+
+#http://localhost/app_web/office/clientes.php?pagina=2
+RewriteRule ^clientes/pagina/(.*) clientes.php?pagina=$1 [NC,L]
+RewriteRule ^clientes/(.*)/(.*) clientes.php?pagina=$1&pesquisa=$2 [NC,L]
+
+RewriteRule ^editor$ editor.php
+RewriteRule ^editor/(.*) editor.php?target=$1 [NC,L]
+RewriteRule ^editor/(.*)/(.*) editor.php?target=$1&acao=$2 [NC,L]
+
+RewriteRule ^mensalidades/pagina/(.*) mensalidades.php?pagina=$1 [NC,L]
+RewriteRule ^mensalidades/(.*)/(.*) mensalidades.php?pagina=$1&pesquisa=$2 [NC,L]

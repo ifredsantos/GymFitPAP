@@ -1,0 +1,39 @@
+#Não mostrar listagens de pastas
+Options -Indexes
+
+RewriteEngine On
+
+#RewriteCond %{HTTPS} off
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteBase /app_web/
+
+#RewriteCond %{REMOTE_HOST} !^2\.80\.102\.40$
+#RewriteRule (.*) manutencao.php [L]
+
+ErrorDocument 403 /app_web/403.php
+ErrorDocument 404 /app_web/404.php
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php !-f
+
+RewriteRule ^home?$ index.php [NC,L]
+RewriteRule ^home/msg/(.*) index.php?msg=$1 [NC,L]
+
+RewriteRule ^criar-registo?$ registo_criar.php [NC,L]
+RewriteRule ^completar-registo?$ registo_completar.php [NC,L]
+RewriteRule ^modalidade?$ modalidade.php [NC,L]
+RewriteRule ^modalidade/(.*)$ modalidade.php?nome=$1 [NC,L]
+RewriteRule ^registo?$ registo.php [NC,L]
+RewriteRule ^logout?$ logout.php [NC,L]
+RewriteRule ^403?$ 403.php [NC,L]
+RewriteRule ^404?$ 404.php [NC,L]
+RewriteRule ^validar-conta/(.*)/(.*)/(.*) parts/validar-conta.php?acao=$1&email=$2&token=$3 [NC,L]
+
+RewriteRule ^perfil?$ perfil.php [NC,L]
+RewriteRule ^perfil/(.*)$ perfil.php?target=$1 [NC,L]
+RewriteRule ^perfil/(.*)/(.*)$ perfil.php?target=$1&id=$2 [NC,L]
+
+RewriteRule ^produto/(.*)/(.*) produto.php?codigo=$1&produto=$2 [NC,L]
+
+RewriteRule ^recuperar_password?$ recuperar_password.php [NC,L]

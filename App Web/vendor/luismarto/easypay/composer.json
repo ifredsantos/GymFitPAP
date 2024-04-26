@@ -1,0 +1,27 @@
+{
+  "name": "luismarto/easypay",
+  "type": "library",
+  "description": "PHP wrapper for integration with Easypay Payment System",
+  "keywords": [
+    "easypay",
+    "multibanco",
+    "debito direto"
+  ],
+  "homepage": "https://geekalicious.pt/phpopenchart/",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Luis Cruz",
+      "homepage": "https://geekalicious.pt/blog/en",
+      "role": "Developer"
+    }
+  ],
+  "version": "1.0.0",
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Easypay\\": "src/"
+    }
+  }
+}

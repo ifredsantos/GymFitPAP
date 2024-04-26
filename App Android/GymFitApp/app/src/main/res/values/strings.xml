@@ -1,0 +1,10 @@
+<!--
+  ~ Developed by Frederico Santos on 20-01-2019 4:32.
+  ~ Last modified 20-01-2019 4:31.
+  ~ Copyright (c) 2019. All rights reserved.
+  -->
+
+<resources>
+    <string name="app_name">GymFit</string>
+    <string name="title">GymFit</string>
+</resources>

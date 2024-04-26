@@ -1,0 +1,231 @@
+.space-categorias {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.space-categoria {
+    float: left;
+    padding: 10px;
+    width: calc(300px - 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media(max-width:1125px)    {
+    .space-categorias {
+        display: block;
+    }
+    .space-categoria {
+        width: calc(100% - 20px);
+    }
+}
+
+.space-categoria img {
+    width: 100%;
+    -webkit-filter: brightness(0.40);
+    filter: brightness(0.40);
+}
+
+.space-categoria-text {
+    position: absolute;
+    text-align: center;
+}
+
+.space-categoria-text p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.space-produtos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.space-produtos a {
+    text-decoration: none;
+    font-style: normal;
+}
+
+.space-produtos-prod {
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    width: calc(250px - 20px);
+    background-color: #262626;
+}
+
+.space-produtos-prod img {
+    width: 100%;
+}
+
+.space-produtos-prod .prod-label {
+    text-align: center;
+    font-size: 12px;
+    margin: 5px;
+    font-style: italic;
+}
+
+.space-produtos-prod .prod-name {
+    font-size: 18px;
+    text-transform: none;
+    text-align: center;
+}
+
+.space-produtos-prod .prod-price {
+    font-weight: 700;
+    color: #ECA739;
+    text-align: center;
+    padding-top: 2px;
+}
+
+.space-produtos-prod hr {
+    width: 100%;
+    border: 1px solid rgb(46, 46, 46);
+}
+
+.space-ver-produto {
+    width: calc(65% - 20px);
+    float: left;
+    border: 2px solid #262626;
+    padding: 10px;
+}
+
+.space-ver-produto .foto-principal {
+    width: 50%;
+    float: left;
+}
+
+.space-ver-produto .space-outras-fotos {
+    width: 50%;
+    float: left;
+}
+
+.space-ver-produto .space-outras-fotos img {
+    float: left;
+    width: calc(50% - 6px);
+    display: flex;
+    margin: 0px 0px 6px 6px;
+}
+
+.space-ver-produto .space-produto-extra-info {
+    float: left;
+    width: calc(100% - 20px);
+    background-color: #1f1f1f;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.space-ver-produto .space-produto-extra-info .bola {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 5px;
+    margin-top: 9px;
+}
+
+.space-ver-produto .space-produto-extra-info .green {
+    background-color: green;
+}
+
+.space-ver-produto .space-produto-extra-info .blue {
+    background-color: blue;
+}
+
+.space-ver-produto .space-produto-extra-info .red {
+    background-color: red;
+}
+
+.space-ver-produto .space-produto-extra-info p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.space-ver-produto .space-produto-extra-info img {
+    width: 18px;
+    float: left;
+    margin-right: 5px;
+}
+
+.space-ver-produto .space-produto-texto {
+    width: 100%;
+    float: left;
+    margin-top: 5px;
+}
+
+.space-ver-produto .space-produto-texto p {
+    margin-top: 5px;
+}
+
+.space-opcoes-produto {
+    border: 2px solid #262626;
+    margin-left: 20px;
+    width: calc(35% - 48px);
+    height: 500px;
+    float: left;
+    padding: 10px;
+}
+
+.space-opcoes-produto .marca {
+    color: grey;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.space-opcoes-produto .nome {
+    font-weight: normal;
+    text-transform: none;
+}
+
+.space-opcoes-produto .preco {
+    color: #ECA739;
+    font-size: 28px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.space-opcoes-produto hr {
+    width: 100%;
+    border: 1px solid rgb(46, 46, 46);
+}
+
+.space-produtos-opcoes .opcao {
+    float: left;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.space-produtos-opcoes p {
+    float: left;
+    padding-top: 5px;
+}
+
+.space-produtos-opcoes select {
+    float: right;
+    margin-left: 10px;
+    border: 1px solid #262626;
+    background-color: #191919;
+    color: #efefef;
+    font-size: 16px;
+    padding: 5px;
+    min-width: 130px;
+}
+
+.btn-submit {
+    margin-top: 5px;
+    width: 100% !important;
+    border-radius: 10px;
+    background-color: #1f1f1f !important;
+    padding: 10px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #2e2d2d !important;
+}
