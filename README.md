@@ -1,7 +1,7 @@
 # GymFit - PAP
 
 ## Descrição
-Este projeto foi desenvolvido para fins escolares. Foi o meu projeto final de curso (PAP).
+Este projeto foi desenvolvido para fins escolares em 2019. Foi o meu projeto final de curso (PAP).
 
 ## Funcionalidades
 O website consiste em:
