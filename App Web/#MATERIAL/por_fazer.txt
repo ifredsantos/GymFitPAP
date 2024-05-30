@@ -1,0 +1,27 @@
+O que falta fazer?
+
+
+
+__________________________________________________________
+- Retirar o lápis de edição das mensalidades já canceladas
+- Verificar o peso ideial na primeira analise
+- Retirar o rodapé fixo
+- Concluir a alteração de email na área de perfil do clientes
+- Cocluir sistema de conquistas se existir tempo bem como o upload de foto de perfil do cliente
+
+
+
+___________________________________________________________
+O MAIS IMPORTANTE
+- Ao apagar um exercício igual de um plano elimina os dois
+- Apenas enviar email de faturação se for um cliente com conta online
+
+
+
+
+___________________________________________________________
+- Remover clientes de um planos personalizado (feito)
+- Acabar a página de clientes do BackOffice (feito)
+- Melhorar as pesquisas de clientes (feito)
+- Pesquisa nas mensalidades (feito)
+- Anulamento de mensalidades (feito)

@@ -1,0 +1,9 @@
+O cliente deverá dar a conhecer o seu estado atual (altura, peso) o peso alvo e o periodo para o cumprir
+
+IMC
+Massa Gorda
+Perímetro Abdominal
+Pressão Arterial
+Peso VS Massa gorda
+Gordura viseral
+Massa muscular

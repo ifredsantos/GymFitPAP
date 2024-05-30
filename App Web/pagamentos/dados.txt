@@ -1,0 +1,12 @@
+----------------------------------
+Entrar no euPago
+----------------------------------
+Email: demo-fredinsondev@gmail.com
+Password:158938d
+----------------------------------
+         BACKOFFICE
+https://replica.eupago.pt
+----------------------------------
+         DOCUMENTAÇÃO
+https://suporte.eupago.pt/pt/article/172-soap-api
+https://replica.eupago.pt/clientes/contas/editar_canal/ -> configurar URL de retorno
