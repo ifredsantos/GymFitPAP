@@ -1,2 +1,5 @@
 
 /App Web/vendor
+/App Windows/gymfit_app/obj
+/App Windows/gymfit_app/bin
+/App Windows/packages
