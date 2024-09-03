@@ -56,6 +56,7 @@
     define("IP_ESTABLECIMENTO", array("::1"));
     define("MAX_LOGIN_TENTATIVAS", "5");
     define("MAX_LOGIN_TEMPO", "1"); // em horas
+    define("TEMPO_INATIVIDADE", 5);
     
     // ==============================================
     define("PROGRAMER_NAME", "Frederico Santos");
@@ -73,7 +74,6 @@
     if(isset($_SESSION['cod_user']) && !empty($_SESSION['cod_user'])) { // Se existir sessão inclui o ficheiro
         /* Este ficheiro atualiza os estado dos utilizadores que estejam inativos 
             por mais de 5 minutos para offline e altera o estado do utilizador atual */
-        define("TEMPO_INATIVIDADE", 5);
         include 'parts/inc_verifica_utilizadores_online.php';
     }
 ?>

@@ -35,6 +35,8 @@
     // Função para formatar o preço
     // ==================================================
     function preco($preco) {
+        if($preco == null)
+            $preco = 0;
         return "&euro;".str_replace(".",",",number_format(round($preco,2),2));
     }
 
@@ -545,6 +547,8 @@
     }
 
     function getFotoPrincipal($string) {
+        if($string == null)
+            return;
         $foto = explode(";", $string);
         return $foto[0];
     }
@@ -562,7 +566,7 @@
         $max = strlen($cr)-1;
         $parteSerial = null;
         for($i=0; $i < 16; $i++) {
-            $parteSerial .= $cr{mt_rand(0, $max)};
+            $parteSerial .= $cr[mt_rand(0, $max)];
         }
         $parteSerial = str_split($parteSerial, 4);
         $parteSerial = "$parteSerial[0]-$parteSerial[1]-$parteSerial[2]-$parteSerial[3]";
